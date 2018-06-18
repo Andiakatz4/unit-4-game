@@ -1,0 +1,79 @@
+h1 {
+    text-align:left; 
+    background: darkorange; 
+    color:white;
+    padding:20px; 
+    height:50px;
+    width:250px;
+}
+
+p {
+    text-align: left;
+    background: beige;
+    color: green;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+br {
+    line-height: 2.25;
+}
+
+#startingNumber {
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+    float: left;
+    background: lightgreen;
+    color: purple;
+    height: 100px;
+    width: 200px;
+}
+
+.winsAndLosses {
+    text-align: left;
+    background: turquoise;
+    height: 100px;
+    width: 70px;
+    float: left;
+    padding: 20px;
+
+}
+
+.crystals {
+    clear: both;
+}
+
+#red {
+    height: 73px;
+    width: 51px;
+    padding: 20px;
+}
+
+#blue {
+    height: 73px;
+    width: 51px;
+}
+
+#yellow {
+    height: 73px;
+    width: 51px;
+}
+
+#green {
+    height: 73px;
+    width: 51px;
+}
+
+.yourScore {
+    text-align: left;
+    background: teal;
+}
+
+#score {
+    text-align: left;
+    background: teal;
+}
