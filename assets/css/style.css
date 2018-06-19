@@ -31,6 +31,8 @@ br {
     color: purple;
     height: 100px;
     width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .winsAndLosses {
@@ -50,30 +52,49 @@ br {
 #red {
     height: 73px;
     width: 51px;
-    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #blue {
     height: 73px;
     width: 51px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #yellow {
     height: 73px;
     width: 51px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #green {
     height: 73px;
     width: 51px;
+    margin-bottom: 10px;
 }
 
 .yourScore {
     text-align: left;
     background: teal;
+    color: white;
+    float: left;
+    padding: 5px;
+    height: 20px;
+    width: 230px;
 }
 
 #score {
     text-align: left;
+    font-size: 30px;
     background: teal;
+    color: white;
+    height: 100px;
+    width: 230px;
+    padding: 5px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
