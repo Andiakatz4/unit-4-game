@@ -6,7 +6,7 @@
 //The value of each crystal is hidden from you until you click on it.
 //Each time when the game starts, the game will change the values of each crystal
 
-$(document).ready(function() {
+//$(document).ready(function() {
 
 //At the start of the game there is a randomly generated number (between 19 - 120)
 function getRandomInt(min, max) {
@@ -47,25 +47,57 @@ var greenCrystal = getRandomInt(1, 12)
 $('#red').on ('click', function(){
     userScore = userScore + redCrystal;
     console.log("New userScore= " + userScore);
-    $('#userPoints').text(userScore); 
+    $('#score').text(userScore); 
+    //Win: 0 section
+if (userScore === random){
+    win();
+
+//Loss: 0 section
+  } else if (userScore > random){
+    loss();
+  } 
 })  
 
   $('#blue').on ('click', function(){
     userScore = userScore + blueCrystal;
     console.log("New userScore= " + userScore);
-    $('#userPoints').text(userScore); 
+    $('#score').text(userScore); 
+    //Win: 0 section
+if (userScore === random){
+    win();
+
+//Loss: 0 section
+  } else if (userScore > random){
+    loss();
+  } 
 }) 
 
   $('#yellow').on ('click', function(){
     userScore = userScore + yellowCrystal;
     console.log("New userScore= " + userScore);
-    $('#userPoints').text(userScore);
+    $('#score').text(userScore);
+    //Win: 0 section
+if (userScore === random){
+    win();
+
+//Loss: 0 section
+  } else if (userScore > random){
+    loss();
+  } 
 })  
 
   $('#green').on ('click', function(){
     userScore = userScore + greenCrystal;
     console.log("New userScore= " + userScore);
-    $('#userPoints').text(userScore); 
+    $('#score').text(userScore); 
+    //Win: 0 section
+if (userScore === random){
+    win();
+
+//Loss: 0 section
+  } else if (userScore > random){
+    loss();
+  } 
 });  
 
 //Shows total score on the bottom
@@ -81,15 +113,6 @@ var lose = 0;
 $('#numberWins').text(wins);
 $('#numberLosses').text(lose);
 
-//Win: 0 section
-if (userScore === Random){
-    win();
-
-//Loss: 0 section
-  } else if ( userScore > Random){
-    lose();
-  } 
-
 
 //When you win you get 1 point, and alert that says you won! Win=matching computer number
 function win (){
@@ -102,11 +125,12 @@ function win (){
 //When you lose you get 1 loss, and alert that says you lost! Loss=going over given number
 function loss (){
     alert ("You lose!");
-    loss++;
-    $('#numberLosses').text(loss);
+    lose++;
+    $('#numberLosses').text(lose);
     reset()
 };
-
+//});
 
 //When you win or lose, game resets with a new generated number 
+//function reset
 //I know I need to use function reset () but it is not working for me. 
